@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Imagen de perfil */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #00bcd4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Proyectos */
+#proyectos .proyecto {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #00bcd4;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+#proyectos .proyecto h3 {
+    margin-bottom: 5px;
+}
+#proyectos .proyecto a {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+/* Habilidades */
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+#habilidades li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.barra {
+    display: inline-block;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background: #e0e0e0;
+    width: 120px;
+    position: relative;
+    overflow: hidden;
+}
+.barra.html::after {
+    content: '';
+    display: block;
+    background: #e44d26;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+}
+.barra.css::after {
+    content: '';
+    display: block;
+    background: #264de4;
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}
+.barra.js::after {
+    content: '';
+    display: block;
+    background: #f0db4f;
+    width: 60%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Historia Académica y Experiencia */
+#historia-academica ul,
+#experiencia ul {
+    list-style: none;
+    padding: 0;
+}
+#historia-academica li,
+#experiencia li {
+    margin-bottom: 18px;
+    padding-left: 10px;
+    border-left: 3px solid #00bcd4;
+    background: #f7f7f7;
+    border-radius: 4px;
+}
+#historia-academica strong,
+#experiencia strong {
+    color: #00bcd4;
+}
+
+/* Contacto */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#contacto input,
+#contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+#contacto button {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+#contacto button:hover {
+    background: #0097a7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    header {
+        padding: 15px 0;
+    }
+    .section {
+        padding: 15px 8px;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 2px;
+    }
+    .section {
+        padding: 10px 2px;
+    }
+    .foto-perfil {
+        width: 70px;
+        height: 70px;
+    }
+    nav {
+        margin: 10px 0;
+    }
+    nav a {
+        margin: 0 7px;
+        font-size: 0.95em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    #contacto form {
+        max-width: 98%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1em;
+    }
+    .foto-perfil {
+        width: 50px;
+        height: 50px;
+    }
+}
