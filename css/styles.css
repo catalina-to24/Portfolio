@@ -1,225 +1,225 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(120deg, #fceabb 0%, #f8b6b8 100%);
+    min-height: 100vh;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
+    background: linear-gradient(90deg, #f8b6b8 60%, #e8afea 100%);
+    color: #35424a;
+    padding: 32px 0 18px 0;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: relative;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #35424a;
 }
 
-nav {
-    margin: 20px 0;
+header p, .intro-bienvenida {
+    margin: 12px auto 0 auto;
+    max-width: 600px;
+    font-size: 1.15em;
+    color: #35424a;
+    font-weight: 400;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.section {
-    background: #ffffff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Imagen de perfil */
 .foto-perfil {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #00bcd4;
+    border: 3px solid #e8afea;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 2px 12px rgba(248,182,184,0.15);
 }
 
-/* Proyectos */
-#proyectos .proyecto {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-left: 4px solid #00bcd4;
-    background: #f9f9f9;
-    border-radius: 6px;
-}
-#proyectos .proyecto h3 {
-    margin-bottom: 5px;
-}
-#proyectos .proyecto a {
-    color: #00bcd4;
-    text-decoration: underline;
+nav {
+    margin: 22px 0 0 0;
 }
 
-/* Habilidades */
-#habilidades ul {
-    list-style: none;
+nav ul {
     padding: 0;
-}
-#habilidades li {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-.barra {
-    display: inline-block;
-    height: 10px;
-    border-radius: 5px;
-    margin-left: 10px;
-    vertical-align: middle;
-    background: #e0e0e0;
-    width: 120px;
-    position: relative;
-    overflow: hidden;
-}
-.barra.html::after {
-    content: '';
-    display: block;
-    background: #e44d26;
-    width: 90%;
-    height: 100%;
-    border-radius: 5px;
-}
-.barra.css::after {
-    content: '';
-    display: block;
-    background: #264de4;
-    width: 80%;
-    height: 100%;
-    border-radius: 5px;
-}
-.barra.js::after {
-    content: '';
-    display: block;
-    background: #f0db4f;
-    width: 60%;
-    height: 100%;
-    border-radius: 5px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
 }
 
-/* Historia Académica y Experiencia */
-#historia-academica ul,
-#experiencia ul {
-    list-style: none;
-    padding: 0;
+nav a {
+    color: #35424a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.08em;
+    padding: 7px 18px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
 }
-#historia-academica li,
-#experiencia li {
+nav a:hover {
+    background: #e8afea;
+    color: #35424a;
+    box-shadow: 0 2px 8px rgba(181,234,215,0.10);
+}
+
+section {
+    background: #fff7f7;
+    padding: 32px 24px;
+    margin: 32px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    max-width: 800px;
+}
+
+h2 {
+    color: #f8b6b8;
+    margin-top: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+section ul li {
     margin-bottom: 18px;
-    padding-left: 10px;
-    border-left: 3px solid #00bcd4;
-    background: #f7f7f7;
-    border-radius: 4px;
-}
-#historia-academica strong,
-#experiencia strong {
-    color: #00bcd4;
+    font-size: 1.08em;
 }
 
-/* Contacto */
-#contacto form {
+.proyecto h3 {
+    margin-bottom: 4px;
+    color: #35424a;
+    font-size: 1.15em;
+}
+
+.proyecto p {
+    margin: 0 0 8px 0;
+    color: #555;
+}
+
+.conocimiento ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+}
+.conocimiento li {
+    background: #e8afea;
+    color: #35424a;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    box-shadow: 0 1px 4px rgba(181,234,215,0.07);
+}
+
+.educacion strong, .experiencia strong {
+    color: #f8b6b8;
+}
+
+.experiencia ul {
+    list-style: none;
+    padding: 0;
+}
+.experiencia li {
+    background: #fceabb;
+    border-left: 4px solid #e8afea;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.contacto form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     max-width: 400px;
     margin: 0 auto;
 }
-#contacto input,
-#contacto textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    resize: none;
-}
-#contacto button {
-    background: #00bcd4;
-    color: #fff;
-    border: none;
+.contacto input,
+.contacto textarea {
     padding: 12px;
-    border-radius: 5px;
+    border: 1px solid #f8b6b8;
+    border-radius: 6px;
     font-size: 1rem;
+    background: #fff7f7;
+    transition: border 0.2s;
+}
+.contacto input:focus,
+.contacto textarea:focus {
+    border: 1.5px solid #e8afea;
+    outline: none;
+}
+.contacto button {
+    background: linear-gradient(90deg, #f8b6b8 60%, #e8afea 100%);
+    color: #35424a;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 1.08rem;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.2s;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(248,182,184,0.10);
 }
-#contacto button:hover {
-    background: #0097a7;
+.contacto button:hover {
+    background: #b5ead7;
+    box-shadow: 0 4px 16px rgba(181,234,215,0.13);
 }
 
-/* Responsive */
+footer {
+    text-align: center;
+    padding: 16px 0;
+    background: #f8b6b8;
+    color: #35424a;
+    font-size: 1em;
+    margin-top: 40px;
+    border-radius: 0 0 10px 10px;
+}
+
 @media (max-width: 900px) {
-    .container {
-        width: 95%;
+    section {
+        max-width: 98vw;
+        padding: 18px 6px;
+        margin: 18px 0;
     }
     h1 {
         font-size: 2em;
     }
     header {
-        padding: 15px 0;
-    }
-    .section {
-        padding: 15px 8px;
-        margin: 12px 0;
+        padding: 18px 0 10px 0;
     }
 }
 
 @media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 0 2px;
+    h1 {
+        font-size: 1.3em;
     }
-    .section {
+    nav ul {
+        flex-direction: column;
+        gap: 7px;
+    }
+    section {
         padding: 10px 2px;
     }
     .foto-perfil {
         width: 70px;
         height: 70px;
     }
-    nav {
-        margin: 10px 0;
-    }
-    nav a {
-        margin: 0 7px;
-        font-size: 0.95em;
-    }
-    h1 {
-        font-size: 1.3em;
-    }
-    #contacto form {
+    .contacto form {
         max-width: 98%;
     }
 }

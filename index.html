@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/foto-perfil.jpg" alt="Foto de perfil" class="foto-perfil">
+        <h1>Tu Nombre</h1>
+        <p class="intro-bienvenida">¡Bienvenido/a a mi portfolio! Soy estudiante de Diseño y Desarrollo Web, apasionado/a por la creatividad y la tecnología. Aquí podrás conocer mis proyectos, habilidades y experiencia en el mundo digital. ¡Gracias por visitar!</p>
+        <nav>
+            <ul>
+                <li><a href="#proyecto" onclick="scrollToSection(event, 'proyecto')">Proyecto</a></li>
+                <li><a href="#conocimiento" onclick="scrollToSection(event, 'conocimiento')">Conocimiento</a></li>
+                <li><a href="#educacion" onclick="scrollToSection(event, 'educacion')">Educación</a></li>
+                <li><a href="#experiencia" onclick="scrollToSection(event, 'experiencia')">Experiencia</a></li>
+                <li><a href="#contacto" onclick="scrollToSection(event, 'contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="proyecto">
+        <h2>Proyecto</h2>
+        <ul>
+            <li>
+                <h3>Portfolio Web</h3>
+                <p>Un portfolio personal desarrollado con HTML, CSS y JavaScript.</p>
+            </li>
+            <li>
+                <h3>App de Tareas</h3>
+                <p>Aplicación simple para gestionar tareas diarias.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="conocimiento">
+        <h2>Conocimiento</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Diseño Responsivo</li>
+            <li>Git y GitHub</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <section class="educacion">
+        <h2>Educación</h2>
+        <ul>
+            <li>
+                <strong>UADE</strong> - Diseño y Desarrollo Web (2025)
+            </li>
+            <li>
+                <strong>Curso Online</strong> - Introducción a la Programación (2024)
+            </li>
+        </ul>
+    </section>
+
+    <section class="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+            <li>
+                <strong>Pasantía en Desarrollo Web</strong> - Empresa XYZ (2024)
+                <br>
+                Participación en el desarrollo de sitios web institucionales y mantenimiento de contenido.
+            </li>
+            <li>
+                <strong>Freelance</strong> - Proyectos personales y para clientes (2023-2025)
+                <br>
+                Desarrollo de páginas web a medida y asesoramiento en diseño digital.
+            </li>
+        </ul>
+    </section>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    function scrollToSection(event, className) {
+        event.preventDefault();
+        const section = document.querySelector('.' + className);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+</body>
+</html>
