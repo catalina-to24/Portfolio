@@ -8,13 +8,14 @@
 </head>
 <body>
     <header>
-        <img src="img/foto-perfil.jpg" alt="Foto de perfil" class="foto-perfil">
-        <h1>Tu Nombre</h1>
-        <p class="intro-bienvenida">¡Bienvenido/a a mi portfolio! Soy estudiante de Diseño y Desarrollo Web, apasionado/a por la creatividad y la tecnología. Aquí podrás conocer mis proyectos, habilidades y experiencia en el mundo digital. ¡Gracias por visitar!</p>
+        <button onclick="toggleDarkMode()" class="modo-btn" id="modoBtn">🩷</button>
+    <img src="img/FotoInstitucional.jpg" alt="Foto de perfil" class="foto-perfil">
+        <h1>Catalina Tempra Otero</h1>
+        <p class="intro-bienvenida">¡Bienvenido/a a mi portfolio! Soy estudiante de la cerra Licenciatura en gestión de tecnología en UADE, apasionada por la creatividad y la tecnología. Aquí podrás conocer mis proyectos, habilidades y experiencia en el mundo digital. ¡Gracias por visitar!</p>
         <nav>
             <ul>
-                <li><a href="#proyecto" onclick="scrollToSection(event, 'proyecto')">Proyecto</a></li>
-                <li><a href="#conocimiento" onclick="scrollToSection(event, 'conocimiento')">Conocimiento</a></li>
+                <li><a href="#proyecto" onclick="scrollToSection(event, 'proyecto')">Proyectos</a></li>
+                <li><a href="#conocimiento" onclick="scrollToSection(event, 'conocimiento')">Conocimientos</a></li>
                 <li><a href="#educacion" onclick="scrollToSection(event, 'educacion')">Educación</a></li>
                 <li><a href="#experiencia" onclick="scrollToSection(event, 'experiencia')">Experiencia</a></li>
                 <li><a href="#contacto" onclick="scrollToSection(event, 'contacto')">Contacto</a></li>
@@ -23,37 +24,49 @@
     </header>
 
     <section class="proyecto">
-        <h2>Proyecto</h2>
+        <h2>Proyectos</h2>
         <ul>
             <li>
-                <h3>Portfolio Web</h3>
-                <p>Un portfolio personal desarrollado con HTML, CSS y JavaScript.</p>
+                <h3>Linktree</h3>
+                <p>Un linktree universitario para entregas de proyectos</p>
+                <a href=""></a>
             </li>
             <li>
-                <h3>App de Tareas</h3>
-                <p>Aplicación simple para gestionar tareas diarias.</p>
+                <h3>Blog de recetas</h3>
+                <p>Blog donde se detallan recetas de cocina</p>
+                <a href=""></a>
             </li>
         </ul>
     </section>
 
     <section class="conocimiento">
-        <h2>Conocimiento</h2>
+        <h2>Conocimientos</h2>
         <ul>
-            <li>HTML5, CSS3, JavaScript</li>
+            <li>HTML5, CSS, JavaScript</li>
             <li>Diseño Responsivo</li>
             <li>Git y GitHub</li>
             <li>Figma</li>
+            <li>.NET</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>Metodologías agile y Scrum</li>
+            <li>Terraform</li>
         </ul>
     </section>
 
     <section class="educacion">
         <h2>Educación</h2>
-        <ul>
+        <ul>    
             <li>
-                <strong>UADE</strong> - Diseño y Desarrollo Web (2025)
+                <strong>UADE</strong> - Licenciatura en gestión de tecnología de la información (2025-Presente)
             </li>
             <li>
-                <strong>Curso Online</strong> - Introducción a la Programación (2024)
+                <strong>Educación IT</strong> - Scrum Master (2024-2025)
+            <li>
+                <strong>Digital House junto a Globant y Mercado Libre</strong> - Professional developer (2023-2024)
+            </li>
+            <li>
+                <strong>E-Learning UTN </strong> - Programación Web Inicial - Front End, Gestión de proyectos e Inteligencia Emocional (2023)
             </li>
         </ul>
     </section>
@@ -62,14 +75,9 @@
         <h2>Experiencia</h2>
         <ul>
             <li>
-                <strong>Pasantía en Desarrollo Web</strong> - Empresa XYZ (2024)
+                <strong>Packaged App Developer Analyst </strong> - Accenture Argentina (2023-Presente)
                 <br>
-                Participación en el desarrollo de sitios web institucionales y mantenimiento de contenido.
-            </li>
-            <li>
-                <strong>Freelance</strong> - Proyectos personales y para clientes (2023-2025)
-                <br>
-                Desarrollo de páginas web a medida y asesoramiento en diseño digital.
+                Desarrollo de librerias en .net para el área bancaria.  
             </li>
         </ul>
     </section>
@@ -91,17 +99,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; @2025 Catalina Tempra Otero. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-    function scrollToSection(event, className) {
-        event.preventDefault();
-        const section = document.querySelector('.' + className);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-    </script>
+    
+    <script src="functions.js"></script>
 </body>
 </html>
