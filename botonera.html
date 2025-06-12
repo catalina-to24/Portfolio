@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botonera de Sonidos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="botonera-titulo">Botonera de Sonidos</h1>
+        <p>Haz clic en los botones para reproducir diferentes sonidos divertidos.</p>
+    </header>
+    <div class="botonera-container">
+        <div class="botonera-botones">
+            <button class="sound-btn" onclick="playSound('sound1')">😿 Miau</button>
+            <button class="sound-btn" onclick="playSound('sound2')">🐶 Guau</button>
+            <button class="sound-btn" onclick="playSound('sound3')">🔔 Campana</button>
+            <button class="sound-btn" onclick="playSound('sound4')">🎹 Piano</button>
+            <button class="sound-btn" onclick="playSound('sound5')">😂 Risa</button>
+            <button class="sound-btn" onclick="playSound('sound6')">🎸 Guitarra</button>
+        </div>
+        <audio id="sound1" src="sonidos/miau.mp3"></audio>
+        <audio id="sound2" src="sonidos/perro.mp3"></audio>
+        <audio id="sound3" src="sonidos/campana.mp3"></audio>
+        <audio id="sound4" src="sonidos/piano.mp3"></audio>
+        <audio id="sound5" src="sonidos/risa.mp3"></audio>
+        <audio id="sound6" src="sonidos/guitarra.mp3"></audio>
+    </div>
+    <button class="volver">
+            <a href="index.html">Volver al Portfolio</a>
+        </button>
+    <script src="functions.js"></script>
+</body>
+</html>

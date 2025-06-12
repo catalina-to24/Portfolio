@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="galeria-titulo">Galería de Imágenes</h1>
+        <p>Explora una colección de imágenes generadas por IA. Haz clic en las imágenes para verlas ampliadas y disfrutaR de la experiencia.</p>
+    </header>
+    <div class="galeria-container">
+        <div class="galeria-grid">
+            <div class="galeria-item"><img src="img/FlamencoIA.png" alt="FlamencoIA"></div>
+            <div class="galeria-item"><img src="img/GatoIA.png" alt="GatoIA"></div>
+            <div class="galeria-item"><img src="img/PerroIA.png" alt="PerroIA"></div>
+            <div class="galeria-item"><img src="img/PatitoIA.png" alt="PatitoIA"></div>
+            <div class="galeria-item"><img src="img/TortugaIA.png" alt="TortugaIA"></div>
+            <div class="galeria-item"><img src="img/PezIA.png" alt="PezIA"></div>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-arrow left" id="lightboxPrev">&#8592;</button>
+        <img src="" alt="Imagen ampliada" class="lightbox-img" id="lightboxImg">
+        <button class="lightbox-arrow right" id="lightboxNext">&#8594;</button>
+    </div>
+    <button class="volver">
+            <a href="index.html">Volver al Portfolio</a>
+        </button>
+    <script src="functions.js"></script>
+</body>
+</html>
